@@ -31,3 +31,11 @@
     width: 120px;
     font-size: 26px;
 }
+
+.main photo {
+float: left;
+}
+
+p {
+    float: right;
+}
