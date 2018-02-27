@@ -1,5 +1,5 @@
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 300px) { ... }
+@media (min-width: 500px) { ... }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
@@ -23,6 +23,7 @@
     line-height: 75px;
     overflow: auto;
     font-family: 'Georgia', Times, Times New Roman, serif;
+    margin-bottom: 25px;
 }
 
 .topnav a {
@@ -47,6 +48,10 @@
     margin-left: 150px;
     width: 200px;
     font-size: 26px;
+}
+
+mainPhoto {
+    width: 300px;
 }
 
 p {
@@ -82,9 +87,11 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .container {
-    border-radius: 5px;
+    border-radius: 50px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 50px;
+
+
 } 
 
 /* Social Icons */
@@ -136,7 +143,7 @@ input[type=submit]:hover {
     font-size: 72px;
   }
 
-  .img-fluid {
+  /* .img-fluid {
       padding: 30px;
   }
-  
+   */
