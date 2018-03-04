@@ -1,5 +1,5 @@
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 500px) { ... }
+@media (min-width: 576px) { ... }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
@@ -16,46 +16,31 @@
 @include media-breakpoint-up(lg) { ... }
 @include media-breakpoint-up(xl) { ... }
 
-
-.topnav {
-    background-color: blue;
-    overflow: hidden;
-    line-height: 75px;
-    overflow: auto;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    margin-bottom: 25px;
+#mainPhoto {
+    margin: auto;
 }
 
-.topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.photo {
+    margin: auto;
+    padding: 25px;
 }
 
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-    transition: all 1s;
-}
+.centered {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.topnav a.active {
-    float: left;
-    background-color: #4CAF50;
-    color: white;
-    margin-left: 150px;
-    width: 200px;
-    font-size: 26px;
-}
+element.socialLinks {
+  margin-top: 5px;
+  margin-bottom: 5px;
 
-mainPhoto {
-    width: 300px;
 }
 
 p {
     font-family: Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    
 }
 
  /* Style inputs with type="text", select elements and textareas */
@@ -72,7 +57,7 @@ p {
 
 /* Contact Form*/
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -82,66 +67,16 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: lightgray;
 }
 
 /* Add a background color and some padding around the form */
 .container {
-    border-radius: 50px;
+    /* border-radius: 50px; */
     background-color: #f2f2f2;
     padding: 50px;
-
-
 } 
 
-/* Social Icons */
-@font-face {
-    font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?rmr17v');
-    src:  url('fonts/icomoon.eot?rmr17v#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?rmr17v') format('truetype'),
-      url('fonts/icomoon.woff?rmr17v') format('woff'),
-      url('fonts/icomoon.svg?rmr17v#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  .icon {
-    color: #a0a0a0;
-  }
-
-  .icon: hover {
-    opacity: 0.7;
-  }
-
-  .icon-if_github_circle_gray_107139:before {
-    content: "\e900";
-    font-size: 72px;
-  }
-  }
-  .icon-if_stackoverflow_1217146:before {
-    content: "\e901";
-    font-size: 72px;
-    color: #a0a0a0;
-  }
-  .icon-if_linkedin_circle_gray_107149:before {
-    content: "\e908";
-    font-size: 72px;
-  }
 
   /* .img-fluid {
       padding: 30px;

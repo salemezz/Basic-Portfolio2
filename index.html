@@ -1,39 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CSS Practice</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
+  <title>Salem Ezz</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <body>
 
-
-        <div class="topnav"> 
-                <a href="#about">About</a>     
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-                <a class="active" href="index.html"><b>Salem Ezz</b></a>                
-              </div>     
-
-    <!-- Center -->
-    <br>
-    <!-- <h1>About Me</h1> -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Salem Ezz</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"></li>
+        <li class="dropdown"></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class= "container">   
   <div class= "row">   
         
-    <div class="col-md-4">
+    <div class= "col-lg-4">
        
         <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_80%2Cw_300/MTQ3NjM5MjU4NjcxMjI4Mjky
-        /kanye_west_photo_by_frank_micelotta_getty_images_entertainment_getty_51329049.jpg" class="img-fluid" alt="Responsive image" id="mainPhoto">
+        /kanye_west_photo_by_frank_micelotta_getty_images_entertainment_getty_51329049.jpg" class="centered" id=mainPhoto>
         
+    
+
+        <element class="socialLinks centered"> 
+
+          <!-- <div id="socialBox"></div> -->
+          <a href="https://github.com/salemezz" target="_blank"><img src="assets/images/glyphicons-social-22-github.png" class="img-thumbnail" alt="Git Hub"></a> 
+          <a href="https://stackexchange.com/users/12890503/salem-ezz" target="_blank"><img src="assets/images/glyphicons-social-65-stackoverflow.png" class="img-thumbnail" alt="Git Hub"></a>        
+          <a href="https://www.linkedin.com/in/salem-ezz-a0a983116/" target="_blank"><img src="assets/images/glyphicons-social-18-linked-in.png" class="img-thumbnail" alt="Git Hub"></a>
+
+        </element>    
+
         </div>  
 
-            <div class= "col-lg-6">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
+            <div class= "col-lg-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
                 Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper 
                 porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
                 per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh.
@@ -48,21 +69,10 @@
                 orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi 
                 sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel,
                 egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui 
-                quis est pulvinar ullamcorper. </p>
-
-            </div>
+                quis est pulvinar ullamcorper. </div>
+            
                 
-                <div class="col-sm-2">
 
-                    <div id="socialBox">
-
-                            <a href="https://github.com/salemezz" class= "icon-if_github_circle_gray_107139"></a>
-                            <a href="https://github.com/salemezz" class= "icon-if_stackoverflow_1217146"></a>
-                            <a href="https://www.linkedin.com/in/salem-ezz-a0a983116/" class= "icon-if_linkedin_circle_gray_107149"></a>
-
-                    </div>
-               
-                </div>
                
          </div>
 
