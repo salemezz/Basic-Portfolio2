@@ -2,7 +2,13 @@
 #mainText {
     text-align: center;
 }
-@media (min-width: 576px) {
+@media (min-width: 320px) {
+    #mainText {
+        text-align: center;
+    }
+}
+    
+@media (min-width: 640px) {
     #mainText {
         text-align: center;
     }
