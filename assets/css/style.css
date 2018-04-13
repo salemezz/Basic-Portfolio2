@@ -2,16 +2,21 @@
 
 
 #mainText {text-align: center;}
-.container {
+.dropdown-item {
+    line-height: 2;
+    padding-left: 50px;
+}
+#coding-dropdown {width: 300px;}
 
+/* .container {
     background-color: #f2f2f2;
     padding: 30px;  
     margin-top: -30px;
-}
+} */
 
 @media (min-width: 640px) {
     #mainText {text-align: center;}
-    .container {
+    .mainContainer {
         padding: 30px;
         margin-top: -30px;
     }
@@ -20,16 +25,25 @@
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     #mainText {text-align: center;}
-    .container {
+    .mainContainer {
         padding: 30px;
         margin-top: 20px;
-    }     
+    } 
+    #myNavbar {
+        float: right;
+        padding-right: 40px;
+    }    
+    .dropdown-item {
+        line-height: 2;
+        padding-left: 0px;
+    }
+    #coding-dropdown {width: 170px;}
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     #mainText {text-align: center;}
-    .container {
+    .mainContainer {
         padding: 50px;
         margin-top: 20px;
     }  
@@ -42,11 +56,13 @@
         padding-right: 45px;
         text-align: left;
     }
-
  }
 
 
 
+.dropdown-menu {
+     min-width: auto !important;
+ }
 
 
 /* @include media-breakpoint-up(xs) { ... }
@@ -65,12 +81,13 @@
     margin-top: 10px;
     margin-bottom: 5px;
 }
-
-
-.photo {
-    margin: auto;
-    padding: 25px;
+.img-thumbnail:hover {
+    opacity: 0.5;
 }
+.img-thumbnail:active {
+    opacity: 0.5;
+}
+
 .centered {
     display: flex;
     justify-content: center;
@@ -108,11 +125,39 @@ input[type=submit]:hover {
     background-color: lightgray;
 }
 
-/* Add a background color and some padding around the form */
+/*Hardware Programing*/
+.hardwareProgramingProject {
+    border: 1px solid gray;
+    border-radius: 10px; 
+    background-color: #ccc;
+    margin: auto;
+    width: 400px;
+}
 
-
-
-  /* .img-fluid {
-      padding: 30px;
+.projectText {
+    text-align: center;
+}
+.photo {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 600px;
+}
+.bootcampDiv {
+    padding: 3px;
+}
+  
+.bootcampDiv:hover {
+    opacity: 0.5;
   }
-   */
+.previous {
+    margin-right: 20px;
+}
+.next {
+    margin-left: 20px;
+}
+
+.artElement {
+    margin-top: 30px;
+}
+  
+
