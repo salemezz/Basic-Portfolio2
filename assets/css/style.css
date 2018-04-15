@@ -1,15 +1,35 @@
-/* Small devices (landscape phones, 576px and up)*/
-
-
-#mainText {text-align: center;}
-
-
-
-/* .container {
-    background-color: #f2f2f2;
-    padding: 30px;  
-    margin-top: -30px;
-} */
+#mainText {
+    text-align: center;
+    vertical-align: baseline;
+}
+.navbar-custom {
+    background: transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 20px;
+}
+html, body{
+    height: 100%;
+  }
+body {
+    /* background: linear-gradient(to bottom right, darkgray, #d6d8d8); */
+    background: linear-gradient(to bottom, #fafafa 20%, rgb(210, 211, 211) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#navbarNavDropdown {
+    margin-right: 100px;
+}
+.dropdown-menu {
+    background: linear-gradient(to bottom, #fafafa 20%, rgb(243, 243, 243) 100%);
+}
+.navbar-nav  {
+    border: transparent;
+    border-radius: 5px;
+}
+.indexContainer {
+    margin-top: 45px;
+}
 
 @media (min-width: 640px) {
     #mainText {text-align: center;}
@@ -31,6 +51,13 @@
         padding-left: 0px;
     }
     #coding-dropdown {width: 170px;}
+    .navbar-nav  {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    #navbarDropdownMenuLink1 {
+        border-left: 1px solid black;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -60,6 +87,8 @@
 
 #mainPhoto {
     margin: auto;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .img-thumbnail {
@@ -115,7 +144,7 @@ input[type=submit]:hover {
 /*Hardware Programing*/
 .hardwareProgramingProject {
     border: 1px solid gray;
-    border-radius: 10px; 
+    border-radius: 5px; 
     background-color: #ccc;
     margin: auto;
     width: 400px;
@@ -123,14 +152,26 @@ input[type=submit]:hover {
 
 .projectText {
     text-align: center;
+    font-size: 10pt;
+}
+.pagination {
+    text-align: center;
+    margin: 10px
 }
 .photo {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    max-height: 600px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 500px;
+}
+.brandingImg {
+    margin: auto;
+    border-radius: 5px;
+    width: 750px;
+    padding: 15px;
 }
 .bootcampDiv {
     padding: 3px;
+    text-align: center;
 }
   
 .bootcampDiv:hover {
@@ -146,5 +187,4 @@ input[type=submit]:hover {
 .artElement {
     margin-top: 30px;
 }
-  
 
