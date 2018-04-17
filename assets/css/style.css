@@ -10,6 +10,7 @@
 }
 html, body{
     height: 100%;
+    overflow-x: scroll;
   }
 body {
     /* background: linear-gradient(to bottom right, darkgray, #d6d8d8); */
@@ -172,6 +173,7 @@ input[type=submit]:hover {
 .bootcampDiv {
     padding: 3px;
     text-align: center;
+    
 }
   
 .bootcampDiv:hover {
@@ -187,4 +189,3 @@ input[type=submit]:hover {
 .artElement {
     margin-top: 30px;
 }
-
