@@ -41,7 +41,7 @@ body {
 }
 .socialLinks a {
     font-size: 2em;
-    margin-right: 13px; 
+    margin: 7px; 
 }
 #cardDiv {
     transition: all 0.5s;
@@ -139,6 +139,10 @@ p {
     background-color: #ccc;
     margin: auto;
     width: 400px;
+}
+.hardwarePhoto {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .projectText {

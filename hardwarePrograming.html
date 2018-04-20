@@ -73,7 +73,7 @@
       </ul>
     </div> -->
   <div id="cardDiv"></div>
-  <div class="centered">
+  <div class="pagerDiv centered">
     <button id="previous">Previous</button>
     <button id="next">Next</button>
   </div>
@@ -92,7 +92,7 @@
     var currentCard = 0;
     // for(var i = 0; i < hardwareCard.length; i++) {       
     $(document).ready(function () {
-      $('#cardDiv').append('<div>' + '<img class="img-fluid" src=' + hardwareCard[0].photo +
+      $('#cardDiv').append('<div>' + '<img class="img-fluid hardwarePhoto" src=' + hardwareCard[0].photo +
         '><p class="projectText">' + hardwareCard[0].text + '</p>' + '</div>').addClass('img-fluid hardwareProgramingProject');
 
       $('#next').on('click', function () {
@@ -103,7 +103,7 @@
           if (currentCard === hardwareCard.length - 1) {
             $(this).addClass('disabled');
           }
-          var cardPrint = $('<div>' + '<img class="img-fluid" src=' + hardwareCard[currentCard].photo +
+          var cardPrint = $('<div>' + '<img class="img-fluid hardwarePhoto" src=' + hardwareCard[currentCard].photo +
             '><p class="projectText">' + hardwareCard[currentCard].text + '</p>' + '</div>')
           $('#cardDiv').animate({
             opacity: 0
@@ -126,7 +126,7 @@
           if (currentCard === 0) {
             $(this).addClass('disabled');
           }
-          var cardPrint = $('<div>' + '<img class="img-fluid" src=' + hardwareCard[currentCard].photo +
+          var cardPrint = $('<div>' + '<img class="img-fluid hardwarePhoto" src=' + hardwareCard[currentCard].photo +
             '><p class="projectText">' + hardwareCard[currentCard].text + '</p>' + '</div>')
           if (currentCard >= 0) {
             $('#cardDiv').empty();
