@@ -16,7 +16,6 @@ html, body{
     overflow-x: scroll;
   }
 body {
-    /* background: linear-gradient(to bottom right, darkgray, #d6d8d8); */
     background: linear-gradient(to bottom, #fafafa 20%, rgb(210, 211, 211) 100%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,10 +33,19 @@ body {
 .indexContainer {
     margin-top: 45px;
 }
-.img-thumbnail {
-    max-height: 35px !important;
+.disabled {
+    opacity: 0.5;
 }
-
+.invisible {
+    opacity: 0;
+}
+.socialLinks a {
+    font-size: 2em;
+    margin-right: 13px; 
+}
+#cardDiv {
+    transition: all 0.5s;
+}
 @media (min-width: 640px) {
     #mainText {text-align: center;}
     .mainContainer {
@@ -137,9 +145,15 @@ p {
     text-align: center;
     font-size: 10pt;
 }
-.pagination {
-    text-align: center;
-    margin: 10px
+#next{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 15px;
+}
+#previous{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 15px;
 }
 .photo {
     border-top-left-radius: 5px;
