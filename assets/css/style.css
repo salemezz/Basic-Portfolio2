@@ -97,6 +97,7 @@ body {
     margin: auto;
     border-radius: 5px;
     border: 1px solid black;
+    max-height: 350px;
 }
 
 .img-thumbnail {
