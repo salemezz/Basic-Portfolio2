@@ -43,7 +43,7 @@ body {
 }
 .custom-footer {
     border-top: .5px solid black; 
-    margin-top: 25px;
+    margin-top: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-right: 3px !important;
@@ -90,6 +90,8 @@ body {
         margin-top: 80px;
         padding-top: 20px;
         padding-bottom: 20px;
+        margin-right: 100px !important;
+        margin-left: 100px !important;
     }
 }
 

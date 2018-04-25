@@ -16,9 +16,10 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-  crossorigin="anonymous">
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
 </head>
 
 <body>
@@ -81,13 +82,17 @@
   <div class="container-fluid">
     <div class="row align-items-center" style="height: 600px;">
       <div class="col centered">
-        <button type="button"  class="btn btn-primary" id="previous"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="btn btn-primary" id="previous">
+          <i class="fas fa-chevron-left"></i>
+        </button>
       </div>
       <div class="col">
         <div id="cardDiv"></div>
       </div>
       <div class="col centered">
-        <button type="button" class="btn btn-primary" id="next"><i class="fas fa-chevron-right"></i></button>
+        <button type="button" class="btn btn-primary" id="next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
     </div>
   </div>
@@ -115,20 +120,20 @@
           $(this).removeClass('disabled');
           $('#previous').removeClass('disabled');
         }
-          if (currentCard === hardwareCard.length - 1) {
-            $(this).addClass('disabled');
-          }
-        
-        var cardPrint = $('<div>' + '<img class="img-fluid hardwarePhoto" src=' + hardwareCard[currentCard].photo +
-            '><p class="projectText">' + hardwareCard[currentCard].text + '</p>' + '</div>').addClass('img-fluid hardwareProgramingProject');
+        if (currentCard === hardwareCard.length - 1) {
+          $(this).addClass('disabled');
+        }
 
-          $('#cardDiv').animate({
-              opacity: 0
-          }, 500, "linear", function () {
-            $('#cardDiv').animate({opacity: 1}, 500,"linear")
-            $('#cardDiv').empty();
-            $('#cardDiv').append(cardPrint);
-          })
+        var cardPrint = $('<div>' + '<img class="img-fluid hardwarePhoto" src=' + hardwareCard[currentCard].photo +
+          '><p class="projectText">' + hardwareCard[currentCard].text + '</p>' + '</div>').addClass('img-fluid hardwareProgramingProject');
+
+        $('#cardDiv').animate({
+          opacity: 0
+        }, 500, "linear", function () {
+          $('#cardDiv').animate({ opacity: 1 }, 500, "linear")
+          $('#cardDiv').empty();
+          $('#cardDiv').append(cardPrint);
+        })
       });
 
 
@@ -137,33 +142,32 @@
           currentCard--;
           $(this).removeClass('disabled');
         }
-          $('#next').removeClass('disabled');
+        $('#next').removeClass('disabled');
         if (currentCard === 0) {
           $(this).addClass('disabled');
         }
-          var cardPrint = $('<div>' + '<img class="img-fluid hardwarePhoto" src=' + hardwareCard[currentCard].photo +
-            '><p class="projectText">' + hardwareCard[currentCard].text + '</p>' + '</div>').addClass('img-fluid hardwareProgramingProject');
-          if (currentCard >= 0) {
-            $('#cardDiv').empty();
-            $('#cardDiv').append(cardPrint)
-          }
+        var cardPrint = $('<div>' + '<img class="img-fluid hardwarePhoto" src=' + hardwareCard[currentCard].photo +
+          '><p class="projectText">' + hardwareCard[currentCard].text + '</p>' + '</div>').addClass('img-fluid hardwareProgramingProject');
+        if (currentCard >= 0) {
+          $('#cardDiv').empty();
+          $('#cardDiv').append(cardPrint)
+        }
       });
     });
   </script>
-    <footer>
-        <div class="container">
-          <div class="row custom-footer">
-            <div class="col-md-6 centered">
-              <a class="contact" href="mailto:salem.ezz@gmail.com">
-                <i class="fas fa-envelope"></i>: salem.ezz@gmail.com</a>
-            </div>
-            <div class="col-md-6 centered">
-              <a class="contact" href="tel:919-260-5009">
-                <i class="fas fa-phone"></i>: 919-260-5009</a>
-            </div>
-          </div>
+  <footer class=" custom-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 centered">
+          <a class="contact" href="mailto:salem.ezz@gmail.com">
+            <i class="fas fa-envelope"></i>: salem.ezz@gmail.com</a>
         </div>
-      </footer>
+        <div class="col-md-6 centered">
+          <a class="contact" href="tel:919-260-5009">
+            <i class="fas fa-phone"></i>: 919-260-5009</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>
