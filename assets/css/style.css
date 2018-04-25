@@ -30,9 +30,7 @@ body {
     border: transparent;
     border-radius: 5px;
 }
-.indexContainer {
-    margin-top: 45px;
-}
+
 .disabled {
     opacity: 0.5;
 }
@@ -42,6 +40,14 @@ body {
 .socialLinks a {
     font-size: 2em;
     margin: 7px; 
+}
+.custom-footer {
+    border-top: .5px solid black; 
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 3px !important;
+    margin-left: 3px !important;
 }
 @media (min-width: 640px) {
     #mainText {text-align: center;}
@@ -72,6 +78,18 @@ body {
     }
     .navbar-brand {
         margin-left: 100px;
+    }
+    .navbar-custom {
+        background: transparent;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin-bottom: 70px;
+    }
+    .custom-footer {
+        border-top: .5px solid black; 
+        margin-top: 80px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
@@ -179,3 +197,4 @@ p {
 .artElement {
     margin-top: 30px;
 }
+
