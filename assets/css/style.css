@@ -13,9 +13,9 @@
 }
 html, body{
     height: 100%;
-    overflow-y: scroll; /* has to be scroll, not auto */
-    /* -webkit-overflow-scrolling: touch; */
+    overflow-y: scroll;
   }
+iframe { overflow:hidden; }
 body {
     background: linear-gradient(to bottom, #fafafa 20%, rgb(210, 211, 211) 100%);
     background-repeat: no-repeat;
