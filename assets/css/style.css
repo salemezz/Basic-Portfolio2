@@ -13,7 +13,7 @@
 }
 html, body{
     height: 100%;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
   }
 body {
     background: linear-gradient(to bottom, #fafafa 20%, rgb(210, 211, 211) 100%);
