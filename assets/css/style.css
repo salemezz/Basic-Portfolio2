@@ -38,7 +38,6 @@ body {
     border: transparent;
     border-radius: 5px;
 }
-
 .disabled {
     opacity: 0.5;
 }
@@ -57,11 +56,20 @@ body {
     margin-right: 10px !important;
     margin-left: 10px !important;
 }
+#bushel44_logo {
+    max-width: 500px;
+    margin-top: 40px;
+}
 @media (min-width: 640px) {
     #mainText {text-align: center;}
     .mainContainer {
         padding: 30px;
         margin-top: -30px;
+    }
+    #bushel44_logo {
+        max-width: 500px;
+        float: right;
+        margin-top: 40px;
     }
 }
 
@@ -178,6 +186,7 @@ p {
     border-top-right-radius: 5px;
     max-width: 500px;
 }
+
 .brandingImg {
     margin: auto;
     border-radius: 5px;
@@ -195,7 +204,7 @@ p {
   
 .bootcampDiv:hover {
     opacity: 0.5;
-  }
+  }  
 
 
 .previous {
