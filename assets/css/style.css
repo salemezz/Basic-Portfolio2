@@ -142,11 +142,8 @@ body {
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.img-thumbnail:hover {
-    opacity: 0.5;
-}
 .img-thumbnail:active {
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 .centered {
@@ -201,11 +198,6 @@ p {
 .bootcampDiv p {
     font-size: 10pt;
 }
-  
-.bootcampDiv:hover {
-    opacity: 0.5;
-  }  
-
 
 .previous {
     margin-right: 20px;
